@@ -33,6 +33,22 @@ function App() {
     console.log("response ", response.data);
   }
 
+  const getUserByIdTwo = async (userId) => {
+    const response = await axios.get(`${BASE_URL}/users/${userId}`);
+    return response.data.postId;
+  }
+
+  const getPostById = async (postId) => {
+    const response = await axios.get("https://jsonplaceholder.typicode.com/posts/" + postId);
+    return response.data;
+  }
+
+  const getPost = async () => {
+    const postId = await getUserByIdTwo(1);
+    const postData = await getPostById(postId);
+    console.log(postData);
+  }
+
   useEffect(() => { 
     //getAllUsers(); 
 
@@ -47,7 +63,9 @@ function App() {
     //   "paswword": "1453"
     // })
 
-    deleteUser("1");
+    //deleteUser("1");
+
+    getPost();
   }, [])
 
   return (

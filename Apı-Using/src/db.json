@@ -1,29 +1,10 @@
 {
   "users": [
     {
-      "id": "2",
+      "id": "1",
       "username": "Yusuf Aytaş",
-      "password": "897234ssdf"
-    },
-    {
-      "id": "9094",
-      "username": "Bilal",
-      "paswword": "123456"
-    },
-    {
-      "id": "53fd",
-      "username": "Ahmet",
-      "paswword": "123456"
-    },
-    {
-      "id": "16ef",
-      "username": "Ahmet",
-      "paswword": "123456"
-    },
-    {
-      "id": "0cd4",
-      "username": "Ahmet",
-      "paswword": "123456"
+      "password": "897234ssdf",
+      "postId": "7"
     }
   ]
 }
